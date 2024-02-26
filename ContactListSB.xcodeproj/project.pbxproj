@@ -330,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2JB7XLY38;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactListSB/Info.plist;
+				INFOPLIST_FILE = ContactListSB/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -362,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2JB7XLY38;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactListSB/Info.plist;
+				INFOPLIST_FILE = ContactListSB/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
