@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root -->
+        <!--Contact List View Controller-->
         <scene sceneID="bV7-ei-wbC">
             <objects>
-                <tableViewController id="xN2-WV-UVc" sceneMemberID="viewController">
+                <tableViewController id="xN2-WV-UVc" customClass="ContactListViewController" customModule="ContactListSB" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Jf2-e2-aGk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,16 +35,16 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" selectedImage="1.circle.fill" catalog="system" systemItem="contacts" id="XBA-wv-r49"/>
-                    <navigationItem key="navigationItem" title="Root " id="XD7-i9-Zzv"/>
+                    <navigationItem key="navigationItem" id="XD7-i9-Zzv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJf-wi-18i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2054" y="808"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="P9O-3X-dHT">
             <objects>
-                <viewController id="hrS-Q9-4N5" sceneMemberID="viewController">
+                <viewController id="hrS-Q9-4N5" customClass="DetailsViewController" customModule="ContactListSB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jhi-sl-ohv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="2053" y="1576"/>
         </scene>
-        <!--Roo-->
+        <!--Detail Sections View Controller-->
         <scene sceneID="csg-y6-vms">
             <objects>
-                <tableViewController id="tOg-EE-yXK" sceneMemberID="viewController">
+                <tableViewController id="tOg-EE-yXK" customClass="DetailSectionsViewController" customModule="ContactListSB" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ic8-5P-oN2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" selectedImage="2.circle.fill" catalog="system" systemItem="contacts" id="M6m-1g-tH3"/>
-                    <navigationItem key="navigationItem" title="Roo" id="M0y-JJ-cDt"/>
+                    <navigationItem key="navigationItem" id="M0y-JJ-cDt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMm-Qk-C5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,10 +107,11 @@
         <!--Contact List-->
         <scene sceneID="YwN-qF-4Gt">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Xfg-zu-9x3" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Xfg-zu-9x3" customClass="TabBarViewController" customModule="ContactListSB" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contact List" id="Ogy-md-H7D"/>
                     <tabBar key="tabBar" alpha="0.80000000000000004" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BgE-JD-kFB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.41846722364425659" green="0.083579875528812408" blue="0.44485139846801758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
