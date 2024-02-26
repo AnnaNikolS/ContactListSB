@@ -48,10 +48,38 @@
                     <view key="view" contentMode="scaleToFill" id="Jhi-sl-ohv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4NM-zH-Zn1">
+                                <rect key="frame" x="16" y="175" width="361" height="60.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3b-aj-yQE">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsR-YK-K5Q">
+                                        <rect key="frame" x="0.0" y="40.333333333333343" width="361" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ahe-hu-mlv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4NM-zH-Zn1" firstAttribute="top" secondItem="Ahe-hu-mlv" secondAttribute="top" constant="20" id="ISw-Ah-Kbh"/>
+                            <constraint firstItem="Ahe-hu-mlv" firstAttribute="trailing" secondItem="4NM-zH-Zn1" secondAttribute="trailing" constant="16" id="LwZ-33-uxM"/>
+                            <constraint firstItem="4NM-zH-Zn1" firstAttribute="leading" secondItem="Ahe-hu-mlv" secondAttribute="leading" constant="16" id="hTp-zM-UJb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PbZ-aT-TVn"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="vsR-YK-K5Q" id="Vxx-IC-35g"/>
+                        <outlet property="numberLabel" destination="y3b-aj-yQE" id="LLt-ei-hri"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWi-Un-7Bi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
