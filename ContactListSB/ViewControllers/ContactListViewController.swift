@@ -10,11 +10,7 @@ import UIKit
 final class ContactListViewController: UITableViewController {
     
     var persons: [Person]!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
@@ -30,7 +26,7 @@ final class ContactListViewController: UITableViewController {
         
         return cell
     }
-
+    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
